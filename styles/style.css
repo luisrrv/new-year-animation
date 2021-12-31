@@ -1,0 +1,78 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Orbitron", sans-serif;
+}
+body {
+  overflow: hidden;
+}
+section {
+  background: #101;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+}
+section .container {
+  position: absolute;
+}
+section .container h2 {
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: 280%;
+  line-height: 50px;
+  letter-spacing: 10px;
+  color: #222;
+}
+section .container h2 span {
+  animation: animate 5s linear infinite;
+}
+section .container h2 span.happy {
+  animation-delay: -0.2s;
+  filter: hue-rotate(180deg);
+}
+section .container h2 span.new {
+  animation-delay: -0.7s;
+  filter: hue-rotate(90deg);
+}
+section .container h2 span.year {
+  animation-delay: -0.5s;
+  filter: hue-rotate(200deg);
+}
+section .container h2 span.y2022 {
+  animation-delay: -0.9s;
+  filter: hue-rotate(30deg);
+}
+section .container h2 span.ishere {
+  animation-delay: -1.9s;
+  filter: hue-rotate(30deg);
+}
+section .container h2 span.credit {
+  animation-delay: -3s;
+  filter: hue-rotate(30deg);
+}
+@keyframes animate {
+  0%,
+  10%,
+  25%,
+  50%,
+  70%,
+  89%,
+  100% {
+    color: #222;
+    text-shadow: 0 0 5px #222;
+  }
+  5%,
+  25.5%,
+  60%,
+  70.1%,
+  95% {
+    color: #fff;
+    text-shadow: 0 0 5px rgb(111, 0, 255), 0 0 15px rgb(111, 0, 255),
+      0 0 40px rgb(111, 0, 255), 0 0 60px rgb(111, 0, 255),
+      0 0 80px rgb(111, 0, 255), 0 0 100px rgb(111, 0, 255);
+  }
+}
